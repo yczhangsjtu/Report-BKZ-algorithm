@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: BKZ-intro.aux
+The style file: alpha.bst
+Database file #1: reference.bib
+Warning--empty journal in lll1982factoring
+You've used 7 entries,
+            2543 wiz_defined-function locations,
+            599 strings with 5713 characters,
+and the built_in function-call counts, 3486 in all, are:
+= -- 364
+> -- 175
+< -- 4
++ -- 63
+- -- 63
+* -- 240
+:= -- 561
+add.period$ -- 25
+call.type$ -- 7
+change.case$ -- 47
+chr.to.int$ -- 7
+cite$ -- 8
+duplicate$ -- 140
+empty$ -- 243
+format.name$ -- 68
+if$ -- 740
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 7
+newline$ -- 39
+num.names$ -- 21
+pop$ -- 50
+preamble$ -- 1
+purify$ -- 54
+quote$ -- 0
+skip$ -- 125
+stack$ -- 0
+substring$ -- 189
+swap$ -- 42
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 56
+warning$ -- 1
+while$ -- 35
+width$ -- 10
+write$ -- 96
+(There was 1 warning)

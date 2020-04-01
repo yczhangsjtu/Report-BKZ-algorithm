@@ -1,0 +1,46 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{AWHT16}
+
+\bibitem[AWHT16]{awht2016improved}
+Yoshinori Aono, Yuntao Wang, Takuya Hayashi, and Tsuyoshi Takagi.
+\newblock Improved progressive bkz algorithms and their precise cost estimation
+  by sharp simulator.
+\newblock In {\em Annual International Conference on the Theory and
+  Applications of Cryptographic Techniques}, pages 789--819. Springer, 2016.
+
+\bibitem[CN11]{cn2011bkz}
+Yuanmi Chen and Phong~Q Nguyen.
+\newblock Bkz 2.0: Better lattice security estimates.
+\newblock In {\em International Conference on the Theory and Application of
+  Cryptology and Information Security}, pages 1--20. Springer, 2011.
+
+\bibitem[GNR10]{gnr2010lattice}
+Nicolas Gama, Phong~Q Nguyen, and Oded Regev.
+\newblock Lattice enumeration using extreme pruning.
+\newblock In {\em Annual International Conference on the Theory and
+  Applications of Cryptographic Techniques}, pages 257--278. Springer, 2010.
+
+\bibitem[HPS11]{hps2011analyzing}
+Guillaume Hanrot, Xavier Pujol, and Damien Stehl{\'e}.
+\newblock Analyzing blockwise lattice algorithms using dynamical systems.
+\newblock In {\em Annual Cryptology Conference}, pages 447--464. Springer,
+  2011.
+
+\bibitem[HR{\etalchar{+}}19]{hr2019analyzing}
+Md~Haque, Mohammad~Obaidur Rahman, et~al.
+\newblock Analyzing progressive-bkz lattice reduction algorithm.
+\newblock {\em International Journal of Computer Network \& Information
+  Security}, 11(1), 2019.
+
+\bibitem[LLL{\etalchar{+}}82]{lll1982factoring}
+Hendrik~Willem Lenstra, Arjen~K Lenstra, L~Lovfiasz, et~al.
+\newblock Factoring polynomials with rational coeficients.
+\newblock 1982.
+
+\bibitem[SE94]{se1994lattice}
+Claus-Peter Schnorr and Martin Euchner.
+\newblock Lattice basis reduction: Improved practical algorithms and solving
+  subset sum problems.
+\newblock {\em Mathematical programming}, 66(1-3):181--199, 1994.
+
+\end{thebibliography}
