@@ -96,7 +96,7 @@
 \frame
 {
   \frametitle{Introduction}
-  History of BKZ Algorithms:
+  History of BKZ (Block Korkine-Zolotareff) Algorithms:
   \begin{itemize}
   	\item Basic BKZ (Schnorr 1994)
   	\item BKZ 2.0 (Chen-Nguyen 2011): a combination of improvements
@@ -143,28 +143,26 @@
 
 \frame{
 	\frametitle{Mathematical Definitions}
-	Projection $\pi_i:\bbR^n\to\sspan(\vb_1,\cdots,\vb_{i-1})^{\perp}$
+	Projection $\pi_i:\bbR^n\to\sspan(\vb_1,\cdots,\vb_{i-1})^{\perp}$ for $i=1,\cdots,n$
 	\begin{eqnarray}
 	\pi_i(v):=\vec{v}-\sum_{j=1}^{i-1}\langle\vec{v},\vb_j^*\rangle\vb_j^*/\|\vb_j^*\| \label{eqn:pi}
 	\end{eqnarray}
 	which effectively removes the proportion of the vector inside the space $\sspan(\vb_1,\cdots,\vb_{i-1})$.
-	\begin{remark}
+
+	\begin{figure}[ht!]
+	\includegraphics[width=0.5\textwidth]{files/BKZ-Projection.png}
+	\label{fig:proj}
+	\end{figure}
+}
+
+\frame{
+	\frametitle{Mathematical Definitions}
+	Remarks on projections $\{\pi_i\}$:
 	\begin{itemize}
 		\item Gram-Schmidt reduction: $\vb_i^* = \pi_i(\vb_i)$
 		\item $\ker\pi_i=\sspan(\vb_1,\cdots,\vb_{i-1})$. In particular, $\pi_i(\vb_j)=0$ for $j<i$
 		\item $\pi_1(\cdot)$ is the identity map
 	\end{itemize}
-	\end{remark}
-}
-
-\frame{
-	\frametitle{Mathematical Definitions}
-
-	\begin{figure}[ht!]
-	\includegraphics[width=0.7\textwidth]{files/BKZ-Projection.png}
-	\caption{Projection $\pi_i$ eliminates the portion of $\vv$ in $\sspan(\vb_1,\cdots,\vb_{i-1})$}
-	\label{fig:proj}
-	\end{figure}
 }
 
 \frame{
@@ -208,20 +206,26 @@
 \subsection{Enumeration and LLL Algorithm}
 \frame{
 	\frametitle{Enumeration Algorithm}
-	Given a lattice basis $B=(\vb_1,\cdots,\vb_n)$, finds the shortest vector $\vvs$
+	Given a lattice basis $B=(\vb_1,\cdots,\vb_n)$, finding the shortest vector $\vvs$
 	\[
 	\vvs=a_1\vb_1+a_2\vb_2+\cdots+a_n\vb_n\qquad\forall i\in[n]
 	\]
+	is equivalent to finding its coordinates under this basis.
+
+	Problem:
+	\begin{itemize}
+		\item The searching space is $\mathbb{Z}^n$, which is infinite. Enumerating directly in an infinite space is impractical.
+	\end{itemize}
 	Observation:
 	\begin{itemize}
 		\item $\|\pi_n(\vvs)\|\leq\|\pi_{n-1}(\vvs)\|\leq\cdots\leq\|\pi_1(\vvs)\|=\|\vvs\|\leq R$
 		\item $\pi_i(\vvs)=\pi_i(a_i\vb_i+\cdots+a_n\vb_n)$
 	\end{itemize}
-	% Search backwards from $a_n$
-	% \begin{itemize}
-	% 	\item $\pi_n(\vvs)=a_n\pi_i(\vb_n)\xRightarrow{}|a_n|\leq R/\|\vb_n^*\|$
-	% 	\item For given $(a_n,\cdots,a_{i+1})\xRightarrow{}|a_i|$ is bounded
-	% \end{itemize}
+	Results:
+	\begin{itemize}
+		\item First, $|a_n|$ is bound: $\pi_n(\vvs)=a_n\pi_i(\vb_n)\xRightarrow{}|a_n|\leq R/\|\vb_n^*\|$
+		\item For given $(a_n,\cdots,a_{i+1})\xRightarrow{}|a_i|$ is bound
+	\end{itemize}
 }
 
 \frame{
