@@ -160,6 +160,10 @@
   \begin{remark}
   Dilithium relies on the $\ell_{\infty}$-MSIS
   \end{remark}
+
+  \begin{remark}
+  There may be techniques specific for $\ell_{\infty}$-SIS, e.g. BKZ produces $(5,1)$, $(1,5)$. For $\ell_2$-SIS, this is done. For $\ell_{\infty}$-SIS, if $B=4$, you can somehow combine them to get $(4,-4)$.
+  \end{remark}
 }
 
 \frame
@@ -261,7 +265,7 @@
   \end{itemize}
   Finally, each vector can be modeled as follows
   \begin{itemize}
-    \item The first $i-1$ coordiantes modeled by uniform random distribution over $[-q/2, q/2]$
+    \item The first $i-1$ coordinates modeled by uniform random distribution over $[-q/2, q/2]$
     \item The middle $j-i+1$ coordinates modeled by discrete normal distribution with $\sigma=q/\sqrt{j-i+1}$
   \end{itemize}
 }
